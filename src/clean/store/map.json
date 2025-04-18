@@ -1,0 +1,16 @@
+{
+    "groups": {
+      "Tiles": [
+        { "name": "EmptyTile", "x": 20, "y": 10 },
+        { "name": "Stone", "x": 1, "y": 0 }
+      ],
+      "Enemies": [
+        { "name": "Slime", "x": 5, "y": 3 },
+        { "name": "Goblin", "x": 6, "y": 2 }
+      ],
+      "Decor": [
+        { "name": "Tree", "x": 2, "y": 1 }
+      ]
+    }
+  }
+  
