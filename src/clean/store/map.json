@@ -1,16 +1,606 @@
 {
-    "groups": {
-      "Tiles": [
-        { "name": "EmptyTile", "x": 20, "y": 10 },
-        { "name": "Stone", "x": 1, "y": 0 }
-      ],
-      "Enemies": [
-        { "name": "Slime", "x": 5, "y": 3 },
-        { "name": "Goblin", "x": 6, "y": 2 }
-      ],
-      "Decor": [
-        { "name": "Tree", "x": 2, "y": 1 }
-      ]
-    }
+  "groups": {
+    "Tiles": [
+      {
+        "x": 0,
+        "y": 0,
+        "className": "Grass",
+        "uniqueName": "220d02d3-d1bd-4d38-86d2-562343f05e2d"
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "className": "EmptyTile",
+        "uniqueName": "f0200970-c984-477d-a0ab-cb1bb4b6a479"
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "className": "EmptyTile",
+        "uniqueName": "9bf8c9d0-ac4e-49a6-bb14-f6e913f8224b"
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "className": "EmptyTile",
+        "uniqueName": "960b6934-18d1-403b-abf3-07e0657a81e5"
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "className": "EmptyTile",
+        "uniqueName": "71d8c6e1-85e6-4794-87ed-512793d6b113"
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "className": "EmptyTile",
+        "uniqueName": "1cd99f3a-81f4-4769-9c57-08804bfd539e"
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "className": "EmptyTile",
+        "uniqueName": "ca4a693c-7a37-41ff-80fa-613008ab20df"
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "className": "EmptyTile",
+        "uniqueName": "65180492-c1b5-4f15-a5de-bf302a83a48a"
+      },
+      {
+        "x": 0,
+        "y": 8,
+        "className": "EmptyTile",
+        "uniqueName": "91fc421c-3d47-4c6a-b0e4-547116bfb02d"
+      },
+      {
+        "x": 0,
+        "y": 9,
+        "className": "EmptyTile",
+        "uniqueName": "28f2b832-7a9f-4a8b-b455-6af608263b05"
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "className": "EmptyTile",
+        "uniqueName": "0f87ed98-f37f-4114-962a-e5477346c3a0"
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "className": "EmptyTile",
+        "uniqueName": "de923778-662c-4138-ae12-ecd00b5ea1b6"
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "className": "EmptyTile",
+        "uniqueName": "754c0892-b25e-4694-8953-1d37916f8a40"
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "className": "EmptyTile",
+        "uniqueName": "5bbea2a0-3dc4-4cfc-b0ba-ce486fa778ec"
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "className": "EmptyTile",
+        "uniqueName": "3c551eeb-349d-4339-a1e4-634d87eb7324"
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "className": "EmptyTile",
+        "uniqueName": "9219b865-9e0b-4cb6-bb7c-c358e76873d1"
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "className": "EmptyTile",
+        "uniqueName": "628d27ce-d021-4248-944d-bd7a992cfa00"
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "className": "EmptyTile",
+        "uniqueName": "01a42fe5-b628-48b4-a62d-7c34506fce19"
+      },
+      {
+        "x": 1,
+        "y": 8,
+        "className": "EmptyTile",
+        "uniqueName": "eae4cf0c-b544-4bdf-a8d0-d3c537aa2c9c"
+      },
+      {
+        "x": 1,
+        "y": 9,
+        "className": "EmptyTile",
+        "uniqueName": "d329c19f-9cac-4965-9e04-5c0c20afadb1"
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "className": "EmptyTile",
+        "uniqueName": "5ac7cb8e-2b10-4d2d-bf5b-d5a0636dabe5"
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "className": "EmptyTile",
+        "uniqueName": "8bcc2ca7-5930-438f-8941-00c154db9d3e"
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "className": "EmptyTile",
+        "uniqueName": "d1fa8602-3a8e-468a-a38c-bde1b5dc7c87"
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "className": "EmptyTile",
+        "uniqueName": "780212a5-7fa0-4cc9-a2e6-8f5535365b56"
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "className": "EmptyTile",
+        "uniqueName": "1586343a-01f2-4bbf-b1b1-90ca83c3ddda"
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "className": "EmptyTile",
+        "uniqueName": "835bcbd3-c882-4a4b-8f9b-5e8dcc5258fb"
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "className": "EmptyTile",
+        "uniqueName": "2d022262-0497-455e-bec5-609a1aa5ef12"
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "className": "EmptyTile",
+        "uniqueName": "eca92b7f-27e9-49e1-888b-fec1272ac441"
+      },
+      {
+        "x": 2,
+        "y": 8,
+        "className": "EmptyTile",
+        "uniqueName": "d0908176-fed1-4c6b-aa05-67edc2841378"
+      },
+      {
+        "x": 2,
+        "y": 9,
+        "className": "EmptyTile",
+        "uniqueName": "7e3d816a-3715-4f3f-9a13-a51e1e68d392"
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "className": "EmptyTile",
+        "uniqueName": "6b093033-b903-405b-b2b7-9e56e8166e39"
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "className": "EmptyTile",
+        "uniqueName": "4c350688-5d75-43d7-8761-42a8a9185956"
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "className": "EmptyTile",
+        "uniqueName": "84b74838-2cba-4c82-8739-b3c7d05193f1"
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "className": "EmptyTile",
+        "uniqueName": "08f1b92c-6af2-4d51-83a4-ada01e77891f"
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "className": "EmptyTile",
+        "uniqueName": "750f6cf0-91a0-4225-bc86-01ba59643d19"
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "className": "EmptyTile",
+        "uniqueName": "1dd90e9d-522d-4c8f-b573-a5529ab89ff2"
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "className": "EmptyTile",
+        "uniqueName": "50ce7774-1378-4987-9aab-f62cd14d2e1b"
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "className": "EmptyTile",
+        "uniqueName": "bd759020-ff45-49e1-bdbb-a11ee6f55d05"
+      },
+      {
+        "x": 3,
+        "y": 8,
+        "className": "EmptyTile",
+        "uniqueName": "3925073d-e13e-40af-8dd9-8693ba99420a"
+      },
+      {
+        "x": 3,
+        "y": 9,
+        "className": "EmptyTile",
+        "uniqueName": "da654041-90b9-46cf-929d-391ab9f8f129"
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "className": "EmptyTile",
+        "uniqueName": "168ef274-d6ba-439e-8190-a1ab17aba83f"
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "className": "EmptyTile",
+        "uniqueName": "c6874749-4336-4be6-bc18-17f09211bae0"
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "className": "EmptyTile",
+        "uniqueName": "6a904edb-3729-4a86-b753-f764f44d5ef6"
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "className": "EmptyTile",
+        "uniqueName": "63eb91ee-d8d6-4d7b-84ae-7c690ae225da"
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "className": "EmptyTile",
+        "uniqueName": "a35bcd43-e619-409d-b82f-bbb817315767"
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "className": "EmptyTile",
+        "uniqueName": "b091641a-1005-4874-b0bc-dba43d171879"
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "className": "EmptyTile",
+        "uniqueName": "bd99c2a5-d7bf-4d6d-ae17-9cb949bc719c"
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "className": "EmptyTile",
+        "uniqueName": "278bb41b-f880-47ab-8a1f-10ae2a726c3f"
+      },
+      {
+        "x": 4,
+        "y": 8,
+        "className": "EmptyTile",
+        "uniqueName": "1da1e777-a2b6-47b6-9f40-60883c042c52"
+      },
+      {
+        "x": 4,
+        "y": 9,
+        "className": "EmptyTile",
+        "uniqueName": "7017c707-e4d8-4684-af55-9fd1f82f22a7"
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "className": "EmptyTile",
+        "uniqueName": "1b02af4c-b9d1-4381-9618-cc0b27537aed"
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "className": "EmptyTile",
+        "uniqueName": "0e923858-18ca-4825-ab12-b084fba66b0e"
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "className": "EmptyTile",
+        "uniqueName": "a8fd9300-f8eb-40d8-b285-48bb7529dd09"
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "className": "EmptyTile",
+        "uniqueName": "b3a2b18e-ffa1-43f4-ba48-83b9dfd9b092"
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "className": "EmptyTile",
+        "uniqueName": "d10936fe-126f-4f1c-b62f-b7796fc75059"
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "className": "EmptyTile",
+        "uniqueName": "ae232234-eaf7-4f97-8008-de8f50bc241d"
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "className": "EmptyTile",
+        "uniqueName": "61171315-efe6-4863-ab0c-31ff187a53a5"
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "className": "EmptyTile",
+        "uniqueName": "28160f9e-8fc0-4b63-9ce4-d48597a0845a"
+      },
+      {
+        "x": 5,
+        "y": 8,
+        "className": "EmptyTile",
+        "uniqueName": "23f5ef29-47a7-45b2-acd0-596fc9a9a246"
+      },
+      {
+        "x": 5,
+        "y": 9,
+        "className": "EmptyTile",
+        "uniqueName": "fd6d8fd0-e297-47f6-9496-24f26e2ce166"
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "className": "EmptyTile",
+        "uniqueName": "c1c242f0-c90b-49a9-8222-8ddfd22aa3fc"
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "className": "EmptyTile",
+        "uniqueName": "84e7fd1f-934b-4625-8552-f0f8bfb36b78"
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "className": "EmptyTile",
+        "uniqueName": "088dfdbc-bccc-41ca-a682-e90c2e6f2a4e"
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "className": "EmptyTile",
+        "uniqueName": "1da19967-68ad-4798-b775-a9c6bd09dfe0"
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "className": "EmptyTile",
+        "uniqueName": "229cf518-2b5e-476b-a04e-004472b3a221"
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "className": "EmptyTile",
+        "uniqueName": "ee115054-189b-4524-a0b2-5e7bbe800460"
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "className": "EmptyTile",
+        "uniqueName": "677921ae-e12d-4042-b0ce-ed2aa8f828af"
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "className": "EmptyTile",
+        "uniqueName": "12b7eb44-4e51-4cc4-9228-6bdb9035b9f3"
+      },
+      {
+        "x": 6,
+        "y": 8,
+        "className": "EmptyTile",
+        "uniqueName": "6f7da69d-51d9-4d35-8e78-fc903ca1bcd4"
+      },
+      {
+        "x": 6,
+        "y": 9,
+        "className": "EmptyTile",
+        "uniqueName": "a2374097-5fac-460f-a3a3-85ced7946317"
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "className": "EmptyTile",
+        "uniqueName": "97172be7-1d18-4bf3-8359-a60f14f5e96c"
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "className": "EmptyTile",
+        "uniqueName": "05261dd4-0818-4b39-a44f-7580bb7b9d7b"
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "className": "EmptyTile",
+        "uniqueName": "436ccaf5-ef6b-46cf-a124-075b7c136351"
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "className": "EmptyTile",
+        "uniqueName": "3af16bd6-8bb8-4c53-8d19-f02d622d738b"
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "className": "EmptyTile",
+        "uniqueName": "7f1d706c-c031-44be-9dcf-0597e65ac134"
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "className": "EmptyTile",
+        "uniqueName": "7d71da79-9360-455a-a99d-6be5da4bfaca"
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "className": "EmptyTile",
+        "uniqueName": "f3410114-ae97-4582-95fb-baea023d1117"
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "className": "EmptyTile",
+        "uniqueName": "01baf6fd-5421-4ad1-984a-69c99c590ded"
+      },
+      {
+        "x": 7,
+        "y": 8,
+        "className": "EmptyTile",
+        "uniqueName": "174605bb-a363-4f69-b1de-2860f3ecfe42"
+      },
+      {
+        "x": 7,
+        "y": 9,
+        "className": "EmptyTile",
+        "uniqueName": "93ae4278-7243-425f-8ad8-ff050fb0da53"
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "className": "EmptyTile",
+        "uniqueName": "106ebc46-3da3-48b6-9639-910e0deb1aee"
+      },
+      {
+        "x": 8,
+        "y": 1,
+        "className": "EmptyTile",
+        "uniqueName": "e9ecd76b-6ce9-4a94-acfb-fcb16d676f1f"
+      },
+      {
+        "x": 8,
+        "y": 2,
+        "className": "EmptyTile",
+        "uniqueName": "c116b875-440a-4839-8cba-286fcad30cf2"
+      },
+      {
+        "x": 8,
+        "y": 3,
+        "className": "EmptyTile",
+        "uniqueName": "3f49db4c-bee7-4dd6-8c09-e29d4e9384da"
+      },
+      {
+        "x": 8,
+        "y": 4,
+        "className": "EmptyTile",
+        "uniqueName": "887a772a-6dfa-4524-90a8-493ad3461755"
+      },
+      {
+        "x": 8,
+        "y": 5,
+        "className": "EmptyTile",
+        "uniqueName": "cf0cc910-ef1b-412c-a454-79aae3451f4d"
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "className": "EmptyTile",
+        "uniqueName": "65c1a443-acf6-4b90-90f8-f138365cdad6"
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "className": "EmptyTile",
+        "uniqueName": "fb93800b-3f56-48b9-88cc-b988b8b0c223"
+      },
+      {
+        "x": 8,
+        "y": 8,
+        "className": "EmptyTile",
+        "uniqueName": "b6187ac0-d693-4684-8269-2308b4b804b2"
+      },
+      {
+        "x": 8,
+        "y": 9,
+        "className": "EmptyTile",
+        "uniqueName": "46285f8d-dc21-4eef-b2a8-d59eed417ea3"
+      },
+      {
+        "x": 9,
+        "y": 0,
+        "className": "EmptyTile",
+        "uniqueName": "712f30bd-24ff-4244-87cc-f7399b340491"
+      },
+      {
+        "x": 9,
+        "y": 1,
+        "className": "EmptyTile",
+        "uniqueName": "e9cb54d0-4da1-41dd-b9b1-a8fe1797b475"
+      },
+      {
+        "x": 9,
+        "y": 2,
+        "className": "EmptyTile",
+        "uniqueName": "75d5b1fd-8698-4796-9633-2a43116aa995"
+      },
+      {
+        "x": 9,
+        "y": 3,
+        "className": "EmptyTile",
+        "uniqueName": "8c228fe6-b8e5-47e9-bb8e-570efc0046cc"
+      },
+      {
+        "x": 9,
+        "y": 4,
+        "className": "EmptyTile",
+        "uniqueName": "81f1338f-8d1b-4967-8fff-893586eb4ae0"
+      },
+      {
+        "x": 9,
+        "y": 5,
+        "className": "EmptyTile",
+        "uniqueName": "13c23468-911f-41f9-a1f6-0bceebfd74bd"
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "className": "EmptyTile",
+        "uniqueName": "9f390030-6715-4745-a788-e5289595ab12"
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "className": "EmptyTile",
+        "uniqueName": "6010a787-6326-48a5-b618-3f19829ed331"
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "className": "EmptyTile",
+        "uniqueName": "f3ae4f27-a5df-4fe7-957e-1172c3f9165f"
+      },
+      {
+        "x": 9,
+        "y": 9,
+        "className": "EmptyTile",
+        "uniqueName": "8f66c927-3289-4c9c-bded-5c328d60da2b"
+      }
+    ]
   }
-  
+}

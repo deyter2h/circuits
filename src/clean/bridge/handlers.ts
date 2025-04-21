@@ -1,61 +1,68 @@
 import { ConnectionEvent } from './connection';
 import { BridgeElement } from './bridge';
-import { WireLogic } from '../logic/wire.entity';
-import { WireGraphic } from '../render/wire.entity';
 import { Bridge } from './bridge';
-import { EmptyTileLogic } from '../logic/empty.tile';
-import { EmptyTileGraphic } from '../render/empty.tile';
+import { InventoryGraphic } from '../render/inventory';
+import { grassCreatedHandler } from './handlers/grass.created.handler';
+import { wireCreatedHandler } from './handlers/wire.created.handler';
+import { wireEstablishandler } from './handlers/wire.establish.handler';
 
 export function handleTileClicked(this: Bridge, event: ConnectionEvent, element: BridgeElement): void {
-  const x = element.logicElement.x;
-  const y = element.logicElement.y;
+  const inventory = this.runtime_objects.get('Inventory').elements.find((e) => e.className === 'InventoryBar').graphicElement as InventoryGraphic;
+  const item = inventory.getSelectedItem();
+  if (!item) return; //Open it or idk
 
-  const offsets = [
-    { x: -1, y: 0 },
-    { x: 1, y: 0 },
-    { x: 0, y: -1 },
-    { x: 0, y: 1 },
-  ];
-
-   offsets.forEach((o) => {
-
-    const exists = this.runtime_objects.get('Tiles').elements.find((e) => (e.logicElement.x === o.x + x && e.logicElement.y === o.y + y))
-
-    if (!exists) {
-      this.add('Tiles', 'Empty tile', new EmptyTileLogic(o.x + x, o.y + y), new EmptyTileGraphic(this.scene, o.x + x, o.y + y));
+  switch (item) {
+    case 'Grass': {
+      grassCreatedHandler.call(this, event, element);
+      break;
     }
-  });
-
-}
-
-export function handlePlaceWire(this: Bridge, event: ConnectionEvent, element: BridgeElement): void {
-  const x = element.logicElement.x;
-  const y = element.logicElement.y;
-
-  if (!this.runtime_objects.get('Wires')?.elements.find((e) => (e.logicElement.x === x && e.logicElement.y === y))) {
-    this.add('Wires', 'Wire', new WireLogic(x, y), new WireGraphic(this.scene, x, y, x, y));
+    case 'Wire': {
+      wireCreatedHandler.call(this, event, element);
+      wireEstablishandler.call(this, event, element);
+      break;
+    }
   }
-
-  const offsets_low = [
-    { x: -1, y: 0 },
-    { x: 1, y: 0 },
-    { x: 0, y: -1 },
-    { x: 0, y: 1 },
-  ];
-
-  const offsets_high = [
-    { x: -1, y: -1 },
-    { x: 1, y: 1 },
-    { x: -1, y: 1 },
-    { x: 1, y: -1 },
-  ];
-
-  offsets_low.concat(offsets_high).forEach((o) => {
-
-    const exists = this.runtime_objects.get('Wires')?.elements.find((e) => (e.logicElement.x === o.x + x && e.logicElement.y === o.y + y))
-    console.log(exists);
-    if (exists) {
-      this.add('Wires', 'Wire', new WireLogic(o.x + x, o.y + y), new WireGraphic(this.scene, x, y, o.x + x, o.y + y));
-    }
-  });
 }
+
+// export function handlePlaceWire(this: Bridge, event: ConnectionEvent, element: BridgeElement): void {
+//   const inventory = this.runtime_objects.get('Inventory').elements.find((e) => e.name === 'InventoryBar').graphicElement as InventoryGraphic;
+ 
+//   if (inventory.getSelectedItem() === null) {
+//     return;
+//   }
+
+//   const x = element.logicElement.x;
+//   const y = element.logicElement.y;
+
+//   if (this.runtime_objects.get('Wires')?.elements.find((e) => (e.logicElement.x === x && e.logicElement.y === y))) {
+//     return;
+//   }
+
+//   const offsets_low = [
+//     { x: -1, y: 0 },
+//     { x: 1, y: 0 },
+//     { x: 0, y: -1 },
+//     { x: 0, y: 1 },
+//   ];
+
+//   const offsets_high = [
+//     { x: -1, y: -1 },
+//     { x: 1, y: 1 },
+//     { x: -1, y: 1 },
+//     { x: 1, y: -1 },
+//   ];
+
+//   const targetWire: WireLogic = new WireLogic(x, y);
+
+//   this.add('Wires', 'Wire', targetWire, new WireGraphic(this.scene, x, y, x, y));
+
+//   offsets_low.concat(offsets_high).forEach((o) => {
+
+//     const exists = this.runtime_objects.get('Wires')?.elements.find((e) => (e.logicElement.x === o.x + x && e.logicElement.y === o.y + y))
+    
+//     if (exists) {
+//       const newWire: WireLogic = new WireLogic(o.x + x, o.y + y);
+//       this.add('Wires', 'Wire', newWire, new WireGraphic(this.scene, x, y, o.x + x, o.y + y));
+//     }
+//   });
+// }

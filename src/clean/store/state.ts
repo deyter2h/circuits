@@ -5,7 +5,8 @@ export interface State {
   }
   
   export interface EntityData {
-    name: string;
+    className: string;
+    uniqueName: string;
     x: number;
     y: number;
   }

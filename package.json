@@ -8,7 +8,8 @@
     "dependencies": {
         "phaser": "^3.88.2",
         "phaser3-rex-plugins": "^1.80.15",
-        "sharp": "^0.34.1"
+        "sharp": "^0.34.1",
+        "uuid": "^11.1.0"
     },
     "devDependencies": {
         "ts-loader": "^9.2.6",
